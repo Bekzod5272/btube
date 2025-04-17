@@ -4,8 +4,6 @@ import VideoDetail from '../video-detail/video-detail'
 import ChannelCard from '../channel-card/channel-card'
 
 const Videos = ({ videos }) => {
-  console.log(videos);
-  
   return (
     <Stack
       width={'100%'}
