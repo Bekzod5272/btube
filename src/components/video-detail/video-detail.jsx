@@ -13,7 +13,6 @@ const VideoDetail = ({ video }) => {
         component="img"
         image={video?.snippet?.thumbnails?.high?.url}
         alt={video?.snippet?.title}
-        objectFit={'cover'}
       />
       <CardContent sx={{ background: colors.primary, position: 'relative', height: '200px' }}>
         <Typography variant='subtitle1' my={'5px'} sx={{ opacity: '.5' }} >

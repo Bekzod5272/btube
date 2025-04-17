@@ -12,9 +12,9 @@ const Main = () => {
     useEffect(() => {
         const getVideos = async () => {
             const data = await ApiService.fetchData(`search?part=snippet&q=${selectedCategory}`)
-            setVideos(data.items)
+            setVideos(data?.data?.items)
         }
-        getVideos()
+        // getVideos()
     }, [selectedCategory])
     return (
         <Stack>
